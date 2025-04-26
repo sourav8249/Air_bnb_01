@@ -80,7 +80,7 @@ app.put("/listings/:id", async (req, res) => {
   const updatedData = {
     ...req.body.listing,
     image: {
-      url: req.body.listing.image.url,
+      url: req.body.listing.image,
       filename: "f1",
     },
   };
